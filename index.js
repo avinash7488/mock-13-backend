@@ -30,7 +30,7 @@ app.get("/",(req,res)=>{
 // below code can be used to register by users in user site---------------->
 app.post("/signup",async(req,res)=>{
     const {email,password,cp}= req.body;;
-    if(password!==cp){
+    if(password!=cp){
         res.send({"msg":"password didn't match"})
     }else{
         try{
