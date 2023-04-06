@@ -4,7 +4,7 @@ require('dotenv').config();
 const {auth} = require("./middleware/auth.middleware");
 const {connecion}= require("./config/db")
 const {userRouter} = require("./routes/User.routes");
-const {AppointmentsRouter} = require("./routes/Appointments.routes")
+const {AppointmentsRouter} = require("./routes/Appointment.routes")
 const jwt = require("jsonwebtoken");
 const bcrypt= require("bcrypt");
 const { UserModel } = require("./modal/User.model");
